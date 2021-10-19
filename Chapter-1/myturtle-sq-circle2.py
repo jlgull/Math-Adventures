@@ -16,7 +16,7 @@ tur.speed(0)
 # Define function to create a square, which accepts a line length
 
 
-def square(side_length):
+def square(side_length=90):
     for i in range(4):
         tur.forward(side_length)
         tur.right(90)
