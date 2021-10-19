@@ -22,9 +22,12 @@ def square(side_length):
         tur.right(90)
 
 
-# Make 60 squares in a circle
-for num in range(1, 6):
+# Enter the number of circles to make.
+circleCount = int(input("Enter the number of circles to make:"))
 
+for num in range(1, circleCount + 1):
+
+    # Make 60 squares in a circle
     for a in range(60):
         square(num * 50)
         tur.right(6)
