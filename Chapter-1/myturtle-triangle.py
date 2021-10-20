@@ -16,7 +16,7 @@ tur = turtle.Turtle()
 # Assign shape and speed to turtle
 
 tur.shape('turtle')
-tur.speed(0)
+tur.speed(1)
 
 
 # Define a function to draw a square.
@@ -29,9 +29,11 @@ def triangle(side_length=120):
 
 # End of function definition
 
-# Use the following code to draw 4 sets of 3 squares
+# Use the following code to draw 4 sets of 3 triangles
 
-for x in range(12):
+numtriangles = int(input("Enter the number of Triangles you want to see: "))
+
+for x in range(numtriangles):
 
     # Use square function to draw 3 squares
 
@@ -41,7 +43,7 @@ for x in range(12):
 
     triangle()
 
-    tur.right(30)
+    tur.right(360 / numtriangles)
 
 
 turtle.exitonclick()
