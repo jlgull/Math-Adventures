@@ -1,7 +1,8 @@
 #!/bin/python3
 # Created by Jonathan Heard
 #
-# Program to make a rotating and growing square
+# Program to make a rotating and growing square sprial
+
 #   using 2 functions and looping
 #
 # Import module Section and assign short name
@@ -14,6 +15,7 @@ tur.speed(5)
 
 # End of import section
 
+# Function creation section
 # Create a function to draw squares
 
 
@@ -23,7 +25,7 @@ def square(length):
         tur.right(90)
 
 
-# Create a function to draw growing squares
+# Create a function to draw growing square spiral
 
 
 def spiral_squares(side):
