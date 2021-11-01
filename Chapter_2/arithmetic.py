@@ -32,10 +32,6 @@ def mysum(num):
 
 num = int(input("Enter the number to sum to: "))
 
-# mysum(num)
-
 Summation = mysum(num)
 
 print("Results of summing 1 to ", num, "is ", Summation)
-# Print results of the Summation
-# print("Sum of 1 to :", num, "is", running_sum)
