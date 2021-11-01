@@ -14,7 +14,7 @@ def average(a, b):
 # End of function definition
 # Use function to calculate an average
 
-print("Average of 10 and 20 = ", average(10, 20))
+print("Average of 10 and 20 is", average(10, 20))
 
 # Define a new function to use a loop for summation
 
@@ -34,4 +34,4 @@ num = int(input("Enter the number to sum to: "))
 
 Summation = mysum(num)
 
-print("Results of summing 1 to ", num, "is ", Summation)
+print("Results of summing 1 to", num, "is", Summation)
