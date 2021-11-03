@@ -71,7 +71,7 @@ try:
     while True:
         lista.append(int(input("Enter Numbers, blank to end: ")))
 
-except:
+except ValueError:
 
     # if the input is not-integer, then print the list and the average
 
