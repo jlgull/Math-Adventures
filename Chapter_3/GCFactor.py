@@ -27,6 +27,12 @@ def gcf(num1, num2):
             # if i is greater that the current GCF, update GFF
             if i > int(gcfactor):
                 gcfactor = i
+    """# Rewriting the end of function to use a tuple
+
+    factors = (factorlist, gcfactor)
+
+    return factors """
+
     # This was commented out, since I couldn't figure out how to split the
     #   2 returned values.
     # finally return the 2 factor lists
@@ -36,7 +42,7 @@ def gcf(num1, num2):
     #   how to split 2 returned values. I simply added to print section section
     #   to the function.
 
-# If there is no GCF, then there are not common Factors as well
+    #If there is no GCF, then there are not common Factors as well
     if gcfactor == 0:
         print("\nThere are no common Factors and no GCF!")
     else:
@@ -48,7 +54,6 @@ def gcf(num1, num2):
         # Print out the GCF
         print("\nThe Greatest Common Factor (GCF) is:", gcfactor)
 
-
 # End of function definition
 #
 # Request numbers to be evaluated
@@ -56,14 +61,24 @@ def gcf(num1, num2):
 #
 lst = []
 for i in range(0, 2):
-    print("Enter number", i + 1)
+    print("Enter number", i + 1, ":",)
     ele = int(input())
     lst.append(ele)
 
 print("\nThe 2 numbers entered were:", lst)
 
-# Call the gcf function to execute it.
 gcf(lst[0], lst[1])
+
+"""# Call the gcf function to execute it.
+    Commented out, until I can figure out how to use 
+    tuple function
+factors2 = [gcf(lst[0], lst[1])]
+print(factors2)
+"""
+
+
+#print("\nThe common factors are:", factors2(0))
+#print("\n\tand the GCF is :", factors2(1))
 
 # Since I couldn't figure out to split the 2 returned values, I move the print
 #   function inside the actual gcf function
